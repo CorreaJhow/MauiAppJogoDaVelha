@@ -2,23 +2,32 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
+        string vez = "X";
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        //Sender = botão que foi clicado ou "enviador"
+        //Basicamente qual elemento que disparou o event
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            count++;
+            Button btn = (Button)sender;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            btn.IsEnabled = false;
+
+            if (vez.ToUpper() == "X")
+            {
+                btn.Text = "X";
+                vez = "O";
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
+            {
+                btn.Text = "O";
+                vez = "X";
+            }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+
         }
     }
 
