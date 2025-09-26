@@ -8,7 +8,7 @@
     Title="MauiAppJogoDaVelha">
 
     <ShellContent
-        Title="Home"
+        Title="Jogo da Velha"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

@@ -24,28 +24,32 @@
 
     <!-- Define o grid da pagina -->
     <!-- RowDefinitions divide em linhas iguais com o asterisco e o ColumnDefinitions em colunas -->
-    <Grid RowDefinitions="*, *, *, *"
-          RowSpacing="10"
-          ColumnDefinitions="*, *, *" 
-          ColumnSpacing="10" Margin="10">
+    <Grid RowDefinitions="*, *, *, *, *"  RowSpacing="10"
+      ColumnDefinitions="*, *, *" 
+      ColumnSpacing="10" Margin="10">
 
         <Label Grid.Row="0" Grid.Column="0" 
-                   Grid.ColumnSpan="3" 
-                   Text="Jogo Da Velha"/>
+           Grid.ColumnSpan="3" 
+           Text="Jogo Da Velha"/>
 
         <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked"/>
-        <Button x:Name="btn12" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
-        <Button x:Name="btn13" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
-
+        <Button x:Name="btn11" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
+        <Button x:Name="btn12" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
 
         <Button x:Name="btn20" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked"/>
         <Button x:Name="btn21" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"/>
-        <Button x:Name="btn23" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked"/>
-
+        <Button x:Name="btn22" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked"/>
 
         <Button x:Name="btn30" Grid.Row="3" Grid.Column="0" Clicked="Button_Clicked"/>
         <Button x:Name="btn31" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"/>
         <Button x:Name="btn32" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked"/>
+
+        <Button Grid.Row="4" Grid.Column="0" 
+            Grid.ColumnSpan="3" 
+            Text="Novo Jogo" 
+            Clicked="Button_Clicked_1"
+            BackgroundColor="Pink"
+            TextColor="Black"/>
 
     </Grid>
 
